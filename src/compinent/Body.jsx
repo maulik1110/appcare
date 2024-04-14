@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from './Nav'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Home'
+import Footer from './Footer'
 
 
 const Body = () => {
@@ -12,6 +13,7 @@ const Body = () => {
         <Routes>
           <Route path='/' element={<Home/>}/>
         </Routes>
+        <Footer/>
     </div>
   )
 }
