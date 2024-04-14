@@ -1,7 +1,6 @@
 import React from "react";
 
 const HomeProduct = ({ data,title ,maxneeded}) => {
-  console.log(data); // Check the structure of data
   const limiteddata = data.slice(0,maxneeded)
 
   const cuttheword = (name)=>{

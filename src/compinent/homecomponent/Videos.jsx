@@ -10,7 +10,7 @@ const Videos = () => {
     
     <div className='flex items-center md:justify-evenly my-4 gap-2 md:gap-0'>
         {videos.map((item,index)=>(
-            <video autoPlay loop muted className='md:h-[75vh] h-[45vh]' src={item}></video>
+            <video key={index} autoPlay loop muted className='md:h-[75vh] h-[40vh]' src={item}></video>
         ))}
     </div>
         <button className="px-4 py-2 text-center bg-red-700 rounded-md my-5 text-white mx-auto">Shop Now</button>
