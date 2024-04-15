@@ -1,15 +1,15 @@
-import React from 'react'
-import {alldogitem} from "../../utils/alldogitem"
-import IncludeProdPage from './IncludeProdPage'
-
+import React from "react";
+import { alldogitem } from "../../utils/alldogitem";
+import SearchAndFilter from "./SearchAndFilter";
+import Shop from "../Shop";
 
 const DogPage = () => {
   return (
     <div>
-
-        <IncludeProdPage data={alldogitem}/>
+      {/* <Shop/> */}
+      <SearchAndFilter data={alldogitem} />
     </div>
-  )
-}
+  );
+};
 
-export default DogPage
+export default DogPage;

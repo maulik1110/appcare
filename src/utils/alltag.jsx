@@ -1,4 +1,4 @@
-export const allcatitem = [
+export const alltagitem = [
   {
     type: "new",img:"https://www.petsy.online/cdn/shop/products/10_c4064fa0-1a31-40e0-b401-50ea28749e68_704x704.jpg?v=1651045281",name: "Farmina Dry Food - Matisse Kitten",
     price: "347",
@@ -68,5 +68,14 @@ export const allcatitem = [
     available: true,
     discount: "10",
     cutprice: "1,075",
+  },
+  {
+    type: "highRated",img:"https://www.petsy.online/cdn/shop/products/Me-OAdultCatFood-Salmon_704x704.png?v=1626262726",name: "Me-O Adult Dry Cat Food - Salmon",
+    price: "1,980",
+    review: "4.5",
+    description: "Specially formulated for cats over 12 months old. ",
+    available: true,
+    discount: "10",
+    cutprice: "2200",
   },
 ];
