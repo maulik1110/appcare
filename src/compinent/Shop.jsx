@@ -11,10 +11,10 @@ const Shop = () => {
     {name: "Games", linkto: "/shop/gameproducts"},
   ];
   return (
-    <div className="w-screen">
+    <div className="w-screen my-4">
       <nav className="w-[80%] mx-auto bg-black text-center flex gap-4 justify-center p-4 rounded-lg text-white">
         {dataofnav.map((item, index) => (
-          <Link to={`${item.linkto}`} className="text-xl hover:bg-white hover:text-black px-4 py-2 rounded-lg transi duration-200" key={index}>{item.name}</Link>
+          <Link to={`${item.linkto}`} className="text-xl hover:bg-white hover:text-black px-4 py-2 rounded-lg transition-all duration-200" key={index}>{item.name}</Link>
         ))}
       </nav>
       <Outlet/>

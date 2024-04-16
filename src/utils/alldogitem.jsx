@@ -1,6 +1,6 @@
 export const alldogitem = [
   {
-    type: "new",img:"https://www.petsy.online/cdn/shop/products/10_c4064fa0-1a31-40e0-b401-50ea28749e68_704x704.jpg?v=1651045281",name: "Farmina Dry Food - Matisse Kitten",
+    id:"1",type: "new",img:"https://www.petsy.online/cdn/shop/products/10_c4064fa0-1a31-40e0-b401-50ea28749e68_704x704.jpg?v=1651045281",name: "Farmina Dry Food - Matisse Kitten",
     price: "347",
     review: "5.0",
     description:
@@ -10,7 +10,7 @@ export const alldogitem = [
     cutprice: "385",
   },
   {
-    type: "highRated",img:"https://www.petsy.online/cdn/shop/products/26_43a27cad-be53-4af9-8534-d2aa2af7e3d3_704x704.jpg?v=1650882438",name: "Farmina Dry Food - N&D Quinoa Cat Digestion Lamb Adult",
+    id:"2",type: "highRated",img:"https://www.petsy.online/cdn/shop/products/26_43a27cad-be53-4af9-8534-d2aa2af7e3d3_704x704.jpg?v=1650882438",name: "Farmina Dry Food - N&D Quinoa Cat Digestion Lamb Adult",
     price: "2,156",
     review: "4.8",
     description:
@@ -20,7 +20,7 @@ export const alldogitem = [
     cutprice: "2,395",
   },
   {
-    type: "popular",img:"https://www.petsy.online/cdn/shop/products/1_e9b02890-45a6-43d6-a1df-db8692b1a963_704x704.png?v=1687147360",name: "Royal Canin Persian Kitten Breed Dry Cat Food",
+    id:"3",type: "popular",img:"https://www.petsy.online/cdn/shop/products/1_e9b02890-45a6-43d6-a1df-db8692b1a963_704x704.png?v=1687147360",name: "Royal Canin Persian Kitten Breed Dry Cat Food",
     price: "540",
     review: "5.0",
     description:
@@ -30,7 +30,7 @@ export const alldogitem = [
     cutprice: "600",
   },
   {
-    type: "new",img:"https://www.petsy.online/cdn/shop/products/31_650193ed-0c24-487e-bdf2-38d1645550f0_704x704.jpg?v=1650885383",name: "Farmina Dry Food - N&D Quinoa Cat Urinary Duck Adult",
+    id:"4",type: "new",img:"https://www.petsy.online/cdn/shop/products/31_650193ed-0c24-487e-bdf2-38d1645550f0_704x704.jpg?v=1650885383",name: "Farmina Dry Food - N&D Quinoa Cat Urinary Duck Adult",
     price: "621",
     review: "4.5",
     description:
@@ -40,7 +40,7 @@ export const alldogitem = [
     cutprice: "690",
   },
   {
-    type: "highRated",img:"https://www.petsy.online/cdn/shop/products/4_1874db0f-b7f9-46e7-a139-0467cd5c69e7_704x704.jpg?v=1651005377",name: "Farmina Dry Food - N&D Prime Cat Lamb & Blueberry Adult",
+    id:"5",type: "highRated",img:"https://www.petsy.online/cdn/shop/products/4_1874db0f-b7f9-46e7-a139-0467cd5c69e7_704x704.jpg?v=1651005377",name: "Farmina Dry Food - N&D Prime Cat Lamb & Blueberry Adult",
     price: "5,396",
     review: "5.0",
     description:
@@ -50,7 +50,7 @@ export const alldogitem = [
     cutprice: "5,995",
   },
   {
-    type: "popular",img:"https://www.petsy.online/cdn/shop/products/3_38645cee-6607-4438-be8f-3c6029384a55_704x704.jpg?v=1651002514",name: "Farmina Dry Food - N&D Prime Cat Chicken & Pomegranate Adult",
+    id:"6",type: "popular",img:"https://www.petsy.online/cdn/shop/products/3_38645cee-6607-4438-be8f-3c6029384a55_704x704.jpg?v=1651002514",name: "Farmina Dry Food - N&D Prime Cat Chicken & Pomegranate Adult",
     price: "716",
     review: "4.9",
     description:
@@ -60,7 +60,7 @@ export const alldogitem = [
     cutprice: "795",
   },
   {
-    type: "new",img:"https://www.petsy.online/cdn/shop/products/3_38645cee-6607-4438-be8f-3c6029384a55_704x704.jpg?v=1651002514",name: "Kitty Yums Dry Cat Food for Kittens - Ocean Fish",
+    id:"7",type: "new",img:"https://www.petsy.online/cdn/shop/products/3_38645cee-6607-4438-be8f-3c6029384a55_704x704.jpg?v=1651002514",name: "Kitty Yums Dry Cat Food for Kittens - Ocean Fish",
     price: "968",
     review: "4.2",
     description:
@@ -70,7 +70,7 @@ export const alldogitem = [
     cutprice: "1,075",
   },
   {
-    type: "highRated",img:"https://www.petsy.online/cdn/shop/products/Me-OAdultCatFood-Salmon_704x704.png?v=1626262726",name: "Me-O Adult Dry Cat Food - Salmon",
+    id:"8",type: "highRated",img:"https://www.petsy.online/cdn/shop/products/Me-OAdultCatFood-Salmon_704x704.png?v=1626262726",name: "Me-O Adult Dry Cat Food - Salmon",
     price: "1,980",
     review: "4.5",
     description: "Specially formulated for cats over 12 months old. ",
