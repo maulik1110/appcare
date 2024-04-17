@@ -30,8 +30,8 @@ const Home = () => {
   },[])
 
   const [reviews, setReviews] = useState([
-    { name: 'John Doe', experience: 'Great experience!' },
-    { name: 'Jane Smith', experience: 'Awesome product!' },
+    { name: 'Maulik Jivani', experience: 'Great experience!' },
+    { name: 'Angel Jivani', experience: 'Awesome product!' },
   ]);
 
   const addReview = (review) => {

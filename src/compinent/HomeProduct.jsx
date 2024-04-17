@@ -47,10 +47,10 @@ const HomeProduct = ({ data, title, maxneeded, locateTo }) => {
               </h1>
             </div>
             <div className="flex justify-evenly gap-4 mb-4 items-center">
-              <button className="md:px-4 md:py-2 py-1 px-2  bg-blue-400 rounded-lg">
+              <button className="md:px-4 md:py-2 py-1 px-2  bg-slate-300 rounded-lg">
                 Add to cart
               </button>
-              <button className="md:px-4 md:py-2 py-1 px-1 bg-blue-400 rounded-full">
+              <button className="md:px-2 md:py-2 py-1 px-1 bg-slate-200 rounded-full">
                 ❤️
               </button>
             </div>

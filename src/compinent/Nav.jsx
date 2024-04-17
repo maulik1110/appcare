@@ -9,7 +9,7 @@ const Nav = () => {
   const [nav, setNav] = useState(false);
 
   const { user, loginWithRedirect, logout, isAuthenticated } = useAuth0();
-  console.log(user);
+  // console.log(user);
 
   // Toggle function to handle the navbar's display
   const handleNav = () => {
@@ -34,7 +34,7 @@ const Nav = () => {
           <Link
             to={`${item.links}`}
             key={item.id}
-            className="px-4 py-2 hover:bg-[#00df9a] font-semibold rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+            className="px-4 py-2 hover:bg-slate-400 font-semibold rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
           >
             {item.text}
           </Link>
@@ -45,7 +45,7 @@ const Nav = () => {
 
       {isAuthenticated ? (
         <Link
-          className="px-4 py-2 hover:bg-[#00df9a] font-semibold rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+          className="px-4 py-2 md:block hidden hover:bg-slate-400 font-semibold rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
           onClick={() =>
             logout({ logoutParams: { returnTo: window.location.origin } })
           }
@@ -54,7 +54,7 @@ const Nav = () => {
         </Link>
       ) : (
         <Link
-          className="px-4 py-2 hover:bg-[#00df9a] font-semibold rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+          className="px-4 py-2 md:block hidden hover:bg-slate-400 font-semibold rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
           onClick={(e) => loginWithRedirect()}
         >
           Log in
@@ -84,7 +84,7 @@ const Nav = () => {
           <Link
             to={`${item.links}`}
             key={item.id}
-            className="p-4 flex border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+            className="p-4 flex border-b rounded-xl hover:bg-slate-400 duration-300 hover:text-black cursor-pointer border-gray-600"
           >
             {item.text}
           </Link>
@@ -92,7 +92,7 @@ const Nav = () => {
 
         {isAuthenticated  && nav ? (
           <Link
-          className="p-4 flex border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+          className="p-4 flex border-b rounded-xl hover:bg-slate-400 duration-300 hover:text-black cursor-pointer border-gray-600"
             onClick={() =>
               logout({ logoutParams: { returnTo: window.location.origin } })
             }
@@ -101,7 +101,7 @@ const Nav = () => {
           </Link>
         ) : (
           <Link
-          className="p-4 flex border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+          className="p-4 flex border-b rounded-xl hover:bg-slate-400 duration-300 hover:text-black cursor-pointer border-gray-600"
             onClick={(e) => loginWithRedirect()}
           >
             Log in

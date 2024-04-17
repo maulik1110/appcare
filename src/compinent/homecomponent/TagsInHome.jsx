@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const TagsInHome = () => {
   const navigate = useNavigate()
   const redirectTo = ()=>{
-    navigate('shop/tagproducts')
+    navigate('shop')
   }
   return (
     <div >

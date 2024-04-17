@@ -12,7 +12,7 @@ const Shop = () => {
   ];
   return (
     <div className="w-screen md:my-4 my-2">
-      <nav className="md:w-[80%] w-full mx-auto bg-black text-center flex md:gap-4  justify-center md:p-4 p-1 rounded-lg text-white">
+      <nav className="md:w-[80%] w-full mx-auto bg-gray-800 text-center flex md:gap-4  justify-center md:p-4 p-1 rounded-lg text-white">
         {dataofnav.map((item, index) => (
           <Link to={`${item.linkto}`} className="text-xl hover:bg-white hover:text-black md:px-4 px-2 py-2 rounded-lg transition-all duration-200" key={index}>{item.name}</Link>
         ))}
