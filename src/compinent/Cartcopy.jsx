@@ -58,39 +58,39 @@ const Cartcopy = () => {
   return (
     <div className="px-10">
       <h1 className="text-center font-bold text-3xl">Cart</h1>
-      <button
+      {/* <button
         // onClick={handleClearCart}
         className="bg-slate-700 px-3 py-2 font-semibold text-white mt-2 mb-2 rounded-lg"
       >
         Clear Cart
-      </button>
+      </button> */}
       <ul>
         {cartItems.map((item, index) => (
           <div
             key={index}
-            className="flex justify-between gap-5 w-[80vw] mb-3 mt-3 border-b-2 border-slate-300"
+            className="md:flex md:justify-between justify-center items-center gap-5 w-[80vw] mb-3 mt-3 border-b-2 border-slate-300"
           >
             <img
-              src={item.img}
+              src={item.imageUrl}
               alt={item.name}
-              className="w-[20vw] h-[20vw] rounded-lg mb-3"
+              className="md:w-[20vw] md:h-[20vw] w-[50vw] h-[50vw] rounded-lg mb-3 mx-auto"
             />
             <div className="w-full">
-              <h3 className="font-bold text-lg ">{item.name}</h3>
+              <h3 className="md:font-bold font-semibold text-lg md:text-left text-center my-2">{item.title}</h3>
               <p className="text-sm">{item.description}</p>
-              <p className="font-semibold text-2xl">Price: Rs.{item.price}</p>
-              <div className="flex items-center">
+              <p className="font-semibold text-2xl md:text-left text-center">Price: Rs.{item.price}</p>
+              <div className="flex flex-col md:items-center md:flex-row  gap-2 items-center my-4">
                 <h2 className="font-bold  mt-4 text-lg">
                   Quantity: {item.quantity}
                 </h2>
                 <button
-                  className="px-2 py-1 bg-blue-500 text-white rounded-md ml-2"
+                  className="px-4 py-2 bg-blue-500 text-white rounded-md ml-2"
                   onClick={() => handleRemoveItem(item)}
                 >
                   -
                 </button>
                 <button
-                  className="px-2 py-1 bg-green-500 text-white rounded-md ml-2"
+                  className="px-4 py-2 bg-green-500 text-white rounded-md ml-2"
                   onClick={() => handleAddItem(item)}
                 >
                   +
@@ -109,7 +109,7 @@ const Cartcopy = () => {
         </h2>
         <button
           // onClick={paymenthandler}
-          className="bg-slate-700 px-4 py-2 rounded-lg text-center font-semibold text-white mt-4"
+          className="bg-slate-700 px-4 py-2 rounded-lg my-4 text-center font-semibold text-white mt-4"
         >
           Pay: Rs.{totalCost.toFixed(2)}
         </button>

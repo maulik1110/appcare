@@ -37,7 +37,7 @@ const HomeProduct = ({ data, title, maxneeded, locateTo }) => {
               {cuttheword(item.name)}
             </h1>
             {/* <h2 className="px-4 py-1 rounded bg-green-400 text-left w-fit">{item.review}</h2> */}
-            <h2 className="md:px-4 md:py-1 px-1 py-1 md:text-md rounded bg-green-400 text-left w-fit">
+            <h2 className="md:px-4 md:py-1 tracking-tight text-sm whitespace-nowrap px-1 py-1 md:text-md rounded bg-green-400 text-left w-fit">
               Unlock huge discounts
             </h2>
             <div className="flex gap-2 items-center my-3">

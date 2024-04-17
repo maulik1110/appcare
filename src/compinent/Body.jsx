@@ -24,10 +24,10 @@ const Body = () => {
           <Route index element={<Navigate to="dogproducts" />} /> {/* Default redirect */}
           <Route path="dogproducts" element={<DogPage />} />
           <Route path="catproducts" element={<CatPage />} />
-          <Route path="tagproducts" element={<TagsPage />} />
           <Route path="clothproducts" element={<ClothPage />} />
-          <Route path="gameproducts" element={<GamePage />} />
           <Route path="toyproducts" element={<ToysPage />} />
+          {/* <Route path="gameproducts" element={<GamePage />} /> */}
+          <Route path="tagproducts" element={<TagsPage />} />
         </Route>
         <Route path="/cart" element={<Cartcopy />} />
         <Route path="/faq" element={<FAQ />} />

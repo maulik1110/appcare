@@ -36,7 +36,7 @@ const FAQ = () => {
       </h1>
       <div className="w-full my-10 flex justify-center gap-4">
         <input
-          className="px-4 py-2 bg-transparent border-2 border-zinc-500 rounded-lg w-[60%]"
+          className="px-4 py-2 bg-transparent border-2 border-zinc-500 rounded-lg md:w-[60%]"
           onChange={(e) => setQue(e.target.value)}
           placeholder="Ask your question"
           type="text"
@@ -50,10 +50,10 @@ const FAQ = () => {
         </button>
       </div>
 
-      <div className="w-[80%] min-h-screen mx-auto text-justify border-2 px-4 py-2 rounded-lg border-zinc-500">
+      <div className="md:w-[80%] w-full min-h-screen mx-auto text-justify border-2 px-4 py-2 rounded-lg border-zinc-500">
         {/* {!loading ? <pre className="w-full overflow-auto whitespace-pre-wrap">{answer}</pre> : <img src={loadinggif} alt="" />} */}
         {loading ? (
-          <img className="w-full h-full object-cover rounded-lg" src={loadinggif} alt="Loading..." />
+          <img className="w-screen h-screen object-cover rounded-lg" src={loadinggif} alt="Loading..." />
         ) : (
           <pre className="w-full overflow-auto whitespace-pre-wrap">
             {answer}
