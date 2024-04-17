@@ -16,7 +16,7 @@ const CatsInHome = () => {
   return (
     <div className='my-4'>
       <img src={cattoy} alt="" />
-      <HomeProduct data={allcatitem} title={"Popular cats products"} maxneeded={4}/>
+      <HomeProduct data={allcatitem} title={"Popular cats products"} maxneeded={4} locateTo={"shop/catproducts"}/>
     </div>
   )
 }

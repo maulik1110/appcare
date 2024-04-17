@@ -12,6 +12,7 @@ import GamePage from "./shoppingpages/GamePage";
 import ToysPage from "./shoppingpages/ToysPage";
 import Cartcopy from "./Cartcopy";
 import JoinUs from "./JoinUs";
+import FAQ from "./FAQ";
 
 const Body = () => {
   return (
@@ -29,6 +30,7 @@ const Body = () => {
           <Route path="toyproducts" element={<ToysPage />} />
         </Route>
         <Route path="/cart" element={<Cartcopy />} />
+        <Route path="/faq" element={<FAQ />} />
         {/* <Route path="/joinus" element={<JoinUs />} /> */}
 
       </Routes>

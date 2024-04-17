@@ -20,10 +20,8 @@ const Nav = () => {
   const navItems = [
     { id: 1, text: "Home", links: "/" },
     { id: 2, text: "Shop", links: "/shop" },
-    { id: 3, text: "FAQs", links: "/faq" },
-    // { id: 4, text: 'Join Us',links: "/joinus" },
-    { id: 5, text: "Cart", links: "/cart" },
-    // { id: 6, text: "LogIn", links: "" },
+    { id: 3, text: "Ask Me", links: "/faq" },
+    { id: 4, text: "Cart", links: "/cart" },
   ];
 
   return (
@@ -86,11 +84,29 @@ const Nav = () => {
           <Link
             to={`${item.links}`}
             key={item.id}
-            className="p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+            className="p-4 flex border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
           >
             {item.text}
           </Link>
         ))}
+
+        {isAuthenticated  && nav ? (
+          <Link
+          className="p-4 flex border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+            onClick={() =>
+              logout({ logoutParams: { returnTo: window.location.origin } })
+            }
+          >
+            Log Out
+          </Link>
+        ) : (
+          <Link
+          className="p-4 flex border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+            onClick={(e) => loginWithRedirect()}
+          >
+            Log in
+          </Link>
+        )}
       </ul>
     </div>
   );
