@@ -1,22 +1,19 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/logo/logo3.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Nav = () => {
-  // State to manage the navbar's visibility
   const [nav, setNav] = useState(false);
+  const navigate = useNavigate()
 
   const { user, loginWithRedirect, logout, isAuthenticated } = useAuth0();
-  // console.log(user);
 
-  // Toggle function to handle the navbar's display
   const handleNav = () => {
     setNav(!nav);
   };
 
-  // Array containing navigation items
   const navItems = [
     { id: 1, text: "Home", links: "/" },
     { id: 2, text: "Shop", links: "/shop" },
@@ -24,9 +21,14 @@ const Nav = () => {
     { id: 4, text: "Cart", links: "/cart" },
   ];
 
+  const homepagenavigate = () =>{
+    navigate("/")
+    console.log("hi");
+  }
+
   return (
     <div className="bg-white relative z-10 flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black">
-      <img className=" md:h-[15vh] h-[10vh] " src={logo} alt="" />
+      <img onClick={homepagenavigate} className=" md:h-[15vh] h-[10vh] " src={logo} alt="" />
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex ">
